@@ -52,6 +52,12 @@ This information is summarised and provided to the planner as context for genera
 - Only the files identified by the planner are modified.
 - The current implementation does not automatically execute tests after modifying the code.
 
+## Limitations
+
+- The agent is designed for Node.js/Express repositories that follow common project conventions.
+- Repository exploration is based on file names and directory structure rather than deep semantic analysis.
+- The agent assumes the generated code is correct and does not automatically execute or validate tests.
+
 ## Requirements
 
 - Python 3.10 or later
@@ -84,4 +90,4 @@ The agent will:
 - Analyse the repository structure
 - Generate an execution plan
 - Modify the selected source files
-- Display a final execution report
+- Display a final report containing the execution plan, selected feature, files modified, and implementation steps.
