@@ -60,7 +60,7 @@ This information is summarised and provided to the planner as context for genera
 
 ## Requirements
 
-- Python 3.10 or later
+- Python 3.11 or later
 - Git
 - A Gemini API key
 
