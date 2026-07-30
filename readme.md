@@ -14,6 +14,49 @@ The project is divided into the following components:
 - **planner.py** – Uses the Gemini API to generate a structured execution plan in JSON format.
 - **modifier.py** – Uses the Gemini API to modify the selected source files according to the execution plan.
 
+##Architecture Flow
+
+                User Request
+                      │
+                      ▼
+               +---------------+
+               |    main.py    |
+               | Orchestrator  |
+               +---------------+
+                      │
+                      ▼
+              +----------------+
+              | git_manager.py |
+              | Clone Repo     |
+              +----------------+
+                      │
+                      ▼
+              +----------------+
+              |  explorer.py   |
+              | Explore Repo   |
+              +----------------+
+                      │
+             Repository Summary
+                      │
+                      ▼
+              +----------------+
+              |   planner.py   |
+              | Gemini Planner |
+              +----------------+
+                      │
+            JSON Execution Plan
+                      │
+                      ▼
+              +----------------+
+              |  modifier.py   |
+              | Gemini Modifier|
+              +----------------+
+                      │
+              Modified Repository
+                      │
+                      ▼
+              Execution Summary
+              
 ## Workflow
 
 The agent performs the following steps:
