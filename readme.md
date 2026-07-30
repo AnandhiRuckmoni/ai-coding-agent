@@ -14,7 +14,7 @@ The project is divided into the following components:
 - **planner.py** – Uses the Gemini API to generate a structured execution plan in JSON format.
 - **modifier.py** – Uses the Gemini API to modify the selected source files according to the execution plan.
 
-##Architecture Flow
+## Architecture Flow
 
                 User Request
                       │
