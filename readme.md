@@ -15,7 +15,7 @@ The project is divided into the following components:
 - **modifier.py** – Uses the Gemini API to modify the selected source files according to the execution plan.
 
 ## Architecture Flow
-
+```text
                 User Request
                       │
                       ▼
@@ -56,6 +56,7 @@ The project is divided into the following components:
                       │
                       ▼
               Execution Summary
+```
               
 ## Workflow
 
