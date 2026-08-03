@@ -36,6 +36,10 @@ Modify ONLY this file.
 Return ONLY the complete updated file.
 Do not explain anything.
 Do not wrap the code in markdown.
+If this file references functions, routes, models, or schemas, ensure the names are consistent with the planned implementation.
+Do not introduce references to functions or exports that do not exist.
+Return a complete, runnable version of this file.
+
 """
 
         response = self.client.models.generate_content(
